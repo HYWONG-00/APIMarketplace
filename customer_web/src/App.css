@@ -1,0 +1,17 @@
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.name-error, .email-error, .email-invalid-error, .password-error{
+    display: none;
+}
+
+.name-error.show, .email-error.show, .email-invalid-error.show , .password-error.show{
+    display: block;
+    animation: shake 0.5s;
+}
